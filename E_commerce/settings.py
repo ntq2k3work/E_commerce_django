@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -109,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC+7'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
@@ -134,3 +135,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')  #Lưu trữ ảnh,video sản phẩ
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Welcome to Dashboard",
+     "site_brand": "DASHBOARD",
+     "login_logo": None,
+     "welcome_sign": "Login admin",
+     "login_logo_dark": None,
+     "site_logo_classes": "img-circle",
+}
