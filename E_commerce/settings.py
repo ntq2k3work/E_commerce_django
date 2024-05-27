@@ -22,6 +22,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-u#b644dz%0if-^#rwj-!d$g%z5%u&-815#+cf)%*)q5h*2$2hb'
 
+
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -41,6 +43,7 @@ INSTALLED_APPS = [
     
     # Custom apps
     'core',
+    'userauths'
     
 ]
 
@@ -144,3 +147,5 @@ JAZZMIN_SETTINGS = {
      "login_logo_dark": None,
      "site_logo_classes": "img-circle",
 }
+
+AUTH_USER_MODEL = 'userauths.User'
